@@ -1,0 +1,64 @@
+body{
+	margin:  5;
+	background:  #746758;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+
+
+}
+
+.container{
+	width: 90%;
+	margin:  0 auto;
+
+}
+
+header{
+	background: ;
+
+}
+
+
+nav{
+
+	float: left;
+
+}
+
+nav ul{
+font-size: x-large;
+list-style: none;
+
+
+
+}
+
+nav ul li a{
+
+	color: #B9B7A7;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+}
+
+nav ul li a:hover{
+color: #7C90A0;
+}
+
+
+
+h1{
+	margin-left: 5%;
+	font-size: 72px;
+	
+
+}
+
+
+li {
+	margin: 10%;
+}
+
+
+
+
