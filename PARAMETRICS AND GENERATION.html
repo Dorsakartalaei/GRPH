@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="PARAMETRICS AND GENERATION.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<title>PARAMETRICS AND GENERATION</title>
+
+</head>
+
+		<div class="topnav">
+  			<a class="active" href="parametrics.html">PARAMETRICS AND GENERATION</a>
+		</div>
+
+		<h1>SKETCHES</h1>
+<body>
+
+		<div class=container>
+			<img src="images/sk1.png" alt="sk1">
+			<p>		
+					function setup()  {
+					createCanvas(800,800)
+					background(239, 152, 174)
+					}
+
+					function draw() {
+						noStroke()
+					fill(211, 131, 147)
+					rect(100, 100, 100, 600)
+
+					fill(150, 100, 123)
+					noStroke()
+					rect(100, 100, 50, 600)
+
+
+					fill(160, 60, 85)
+					noStroke()
+					rect(600, 100, 100, 600)
+
+					fill(145, 36, 64)
+					noStroke()
+					rect(600, 100, 50, 600)
+
+					fill(209, 95, 118)
+					noStroke()
+					triangle(200, 100, 200, 200, 600, 700)
+
+					fill(255, 199, 213)
+					triangle(200, 200, 200, 300, 600, 700)
+
+					fill(255, 180, 200)
+					triangle(200, 300, 200, 400, 600, 700)
+
+					}
+
+
+			</p>
+
+		</div>
+
+		<div class=container>
+			<img src="images/sk2.png" alt="sk2">
+			<p> 	
+									//refresh
+
+					let speed = 30;
+					var mask;
+
+					function preload() {
+					  mask = loadImage('mask.png')
+					}
+
+					function setup() {
+						createCanvas(1000, 1000)
+						
+						noLoop()
+					}
+
+					function draw() {
+					  
+						background(random(255), random(255), random(255))
+					   
+						let x = width/2
+						let y = height/2
+
+						noStroke()
+
+						//noFill()
+
+
+						//push()
+						//translate(50, 50)
+						fill(random(255), random(255), random(255))
+						beginShape()
+						for (let i = 0; i < 100000; i ++) {
+							vertex(x, y);
+							// x += random(-speed, speed)
+							// y += random(-speed, speed)
+
+							if (random(0, 100) < 50) {
+								//x += random(-speed, speed)
+								if(random(100) <50) {
+									x -= speed
+								}
+								else {
+									x += speed
+								}
+							}
+
+							if (random(100) < 50) {
+								y -= speed
+							}
+
+							else {
+								y += speed
+							}
+						}
+						endShape()
+						//pop()
+					    filter(BLUR, 7)
+
+						 image(mask, 0, 0, 1000, 1000)
+						
+
+					}
+
+					function keyPressed() {
+					  if (key == 's') {
+					    save("mySketch.png");
+					  }
+					}
+
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk3.png" alt="sk3">
+			<p> 	
+				function setup() {
+				  createCanvas(1000, 1000);
+				  angleMode(DEGREES)
+				  //background(30)
+				  // textFont(font)
+				  // textSize(128)
+				  // fill(255)
+				  // text('No', 30, 200)
+
+				}
+
+				function draw() {
+
+				  background(30)
+
+				  fill("Salmon");
+				  textSize(16);
+				  textAlign(CENTER);
+				  text("(" + floor(mouseX) + ", 
+				  " + floor(mouseY) + ")", mouseX, mouseY);
+
+				  // beginShape()
+				  // fill(255, 255, 255, 90)
+				  // vertex(344, 155)
+				  // vertex(445, 155)
+				  // vertex(800, 900)
+				  // vertex(200, 500)
+				  // endShape()
+				  
+				   textSize(900)
+				   textAlign(CENTER)
+				   fill(255)
+				   text('N', 600, 800)
+				   fill(255, 255, 255, 90)
+				   text('N', 570, 800)
+				   fill(255, 255, 255, 80)
+				   text('N', 540, 800)
+				   fill(255, 255, 255, 70)
+				   text('N', 510, 800)
+				   fill(255, 255, 255, 60)
+				   text('N', 470, 800)
+				   fill(255, 255, 255, 50)
+				   text('N', 420, 800)
+				   fill(255, 255, 255, 40)
+				   text('N', 350, 800)
+				   fill(255, 255, 255, 20)
+				   text('N', 300, 800)
+				   fill(255, 255, 255, 10)
+				   text('N', 260, 800)
+
+				   rotate(80)
+
+				   fill(255, 255, 255, 10)
+				   text('N', 900, 490)
+				   fill(255, 255, 255, 20)
+				   text('N', 870, 490)
+				   fill(255, 255, 255, 30)
+				   text('N', 840, 490)
+				   fill(255, 255, 255, 40)
+				   text('N', 810, 490)
+				   fill(255, 255, 255, 50)
+				   text('N', 770, 490)
+				   fill(255, 255, 255, 60)
+				   text('N', 720, 490)
+				   fill(255, 255, 255, 70)
+				   text('N', 750, 490)
+				   fill(255, 255, 255, 80)
+				   text('N', 700, 490)
+				   fill(255, 255, 255)
+				   text('N', 660, 490)
+
+				   rotate(-90)
+
+				   fill(255, 255, 255, 10)
+				   text('N', 900, 490)
+				   fill(255, 255, 255, 20)
+				   text('N', 870, 490)
+				   fill(255, 255, 255, 30)
+				   text('N', 840, 490)
+				   fill(255, 255, 255, 40)
+				   text('N', 810, 490)
+				   fill(255, 255, 255, 50)
+				   text('N', 770, 490)
+				   fill(255, 255, 255, 60)
+				   text('N', 720, 490)
+				   fill(255, 255, 255, 70)
+				   text('N', 750, 490)
+				   fill(255, 255, 255, 80)
+				   text('N', 700, 490)
+				   fill(255, 255, 255)
+				   text('N', 660, 490)
+
+				   rotate(50)
+
+				   fill(255)
+				   text('N', 600, 800)
+				   fill(255, 255, 255, 90)
+				   text('N', 570, 800)
+				   fill(255, 255, 255, 80)
+				   text('N', 540, 800)
+				   fill(255, 255, 255, 70)
+				   text('N', 510, 800)
+				   fill(255, 255, 255, 60)
+				   text('N', 470, 800)
+				   fill(255, 255, 255, 50)
+				   text('N', 420, 800)
+				   fill(255, 255, 255, 40)
+				   text('N', 350, 800)
+				   fill(255, 255, 255, 20)
+				   text('N', 300, 800)
+				   fill(255, 255, 255, 10)
+				   text('N', 260, 800)
+				}
+
+				function mousePressed() {
+				  saveCanvas("s1","png")
+				}
+			</p>
+
+		</div>
+
+		<div class=container>
+			<img src="images/sk4.png" alt="sk3">
+			<p> 	
+				
+
+				let font;
+				let vehicles = [];
+
+				function preload() {
+				  font = loadFont('BebasNeue.ttf');
+				}
+
+				function setup() {
+				  createCanvas(1000, 1000);
+				  background(51);
+				  // textFont(font);
+				  // textSize(192);
+				  // fill(255);
+				  // noStroke();
+				  // text('train', 100, 200);
+
+				  var points = font.textToPoints('N', 320, 800, 900, {
+				    sampleFactor: 0.25
+				  });
+
+				  for (var i = 0; i < points.length; i++) {
+				    var pt = points[i];
+				    var vehicle = new Vehicle(pt.x, pt.y);
+				    vehicles.push(vehicle);
+				    // stroke(255);
+				    // strokeWeight(8);
+				    // point(pt.x, pt.y);
+				  }
+				}
+
+				function draw() {
+				  background(51);
+				  
+				  beginShape()
+				  fill(320, 189, 189 )
+				  noStroke()
+				  rect(300, 100, 415, 750)
+				  endShape()
+				  
+				  for (var i = 0; i < vehicles.length; i++) {
+				    var v = vehicles[i];
+				    v.behaviors();
+				    v.update();
+				    v.show();
+				  }
+				}
+
+				function keyPressed() {
+				  if (key == 's') {
+				    save("mySketch.png");
+				  }
+				}
+
+
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk5.png" alt="sk5">
+			<p> 	
+				let img;
+				let img2;
+
+				function preload() {
+				  
+				  img = loadImage("glitch2.png");
+				  img2 = loadImage("glitch.png");
+				}
+
+				function setup() {
+				  createCanvas(1000, 1000);
+				  pixelDensity(1);
+
+				  img.resize(width, height);
+				  img2.resize(width, 1200);
+				}
+
+				function draw() {
+				  let newPixels = [];
+
+				  img.loadPixels();
+				  img2.loadPixels();
+
+				  for (let y = 0; y < height; y++) {
+				    for (let x = 0; x < width; x++) {
+				      const index = (y * width + x) * 4;
+				      const wrapped = ((index + 4 * y) % (width * 0.04)) + index
+
+				      const r = img.pixels[wrapped + 0]
+				      const g = img.pixels[wrapped + 1]
+				      const b = img.pixels[wrapped + 2]
+
+				      newPixels.push(r, g, b, 255)
+				    }
+				  }
+
+				  for (let i = 0; i < newPixels.length; i++) {
+				    img.pixels[i] = newPixels[i]
+				  }
+
+				  img.updatePixels()
+
+				  image(img, 0, 0)
+				  image(img2, 0, 0)
+				}
+
+				function pixel(index) {
+				  index = wrapIndex(index)
+
+				  return {
+				    r: img.pixels[index + 0],
+				    g: img.pixels[index + 1],
+				    b: img.pixels[index + 2],
+				    a: img.pixels[index + 3],
+				  };
+				}
+
+				function wrapIndex(index) {
+				  let max = img.pixels.length
+
+				  if (index > max) return index % max
+
+				  if (index < 0) return (index % max) + max
+
+				  return index
+				}
+
+				function mousePressed() {
+				  redraw()
+				}
+
+				function keyPressed() {
+				  if (key == 's') {
+				    save("mySketch.png");
+				  }
+				}
+
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk6.png" alt="sk6">
+			<p> 	
+					
+
+				let scale;
+				let speed = 12;
+				let img;
+
+				function preload() {
+				  img = loadImage('Mask.png')
+				}
+
+				function setup() {
+				  createCanvas(1000, 1000);
+				  noStroke();
+				  scale = width / 20;
+				}
+
+				function draw() {
+				  
+				    let x = width/2;
+				    let y = height/2;
+				  
+				  for (let i = 0; i < scale; i++) {
+				    colorMode(RGB, (i + 1) * scale * 10);
+				    fill(millis() % ((i + 1) * scale * 10));
+				    rect(i * scale, 0, scale, height);
+				  }
+				  push() 
+				  beginShape();
+				  fill(248, 51, 105, 50)
+				  stroke(255)
+				  strokeWeight(2)
+				    for (let i=0; i<1000; i++) {
+				      
+				      vertex(x, y);
+						// x += random(-speed, speed)
+						// y += random(-speed, speed)
+
+						if (random(-50, 10) < 50) {
+							//x += random(-speed, speed)
+							if(random(100) <50) {
+								x -= speed
+							}
+							else {
+								x += speed
+							}
+						}
+
+						if (random(100) < 50) {
+							y -= speed
+						}
+
+						else {
+							y += speed
+						}
+					}
+					endShape()
+				  pop()
+
+				  image(img, 0, 0, 1000, 1000)
+				}
+
+				function keyPressed() {
+				  if (key == 's') {
+				    save("mySketch.png");
+				  }
+				}
+
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk7.png" alt="sk7">
+			<p> 	
+				let font
+				let fontSize = 900
+				let hiArray
+				let r = 0
+
+				function preload() {
+				  font = loadFont("Righteous-Regular.ttf")
+				}
+
+				function setup() {
+				  createCanvas(1000, 1000)
+				  textFont(font)
+				  textAlign(CENTER)
+				  textSize(fontSize)
+				  
+				  hiArray = font.textToPoints ("n", width/4, height-250, fontSize, {
+				    sampleFactor: 0.1
+				  })
+				  
+				  
+				}
+
+				function draw() {
+				  background(30)
+				  fill(255)
+				 
+				  //text("n", width/2, height-250)
+				  
+				  stroke(255)
+				  strokeWeight(3)
+				  for (let i = 0; i < hiArray.length; i++) {
+				    push();
+				    translate(hiArray[i].x, hiArray[i].y)
+				    rotate(r);
+				    r++
+				    // line(hiArray[i].x, hiArray[i].y, 0, 0)
+				    arc(-10, -4, -5, -50, -5, -20)
+				    // line(hiArray[i].x, hiArray[i].y, 0, 1000)
+				  pop();
+				  }
+				}
+
+				function keyPressed() {
+				  if (key == 's') {
+				    save("mySketch.png");
+				  }
+				}
+
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk8.png" alt="sk8">
+			<p> 	
+				        let font;
+        let fontSize = 900;
+        let x, y;
+        let firstLetter = [];
+        let secondLetter = [];
+        let hiArray;
+        let r = 0;
+
+        function preload() {
+          font = loadFont("Righteous-Regular.ttf");
+        }
+
+        function setup() {
+          createCanvas(1000, 1000);
+          textFont(font);
+          fill(255);
+          textAlign(CENTER);
+          textSize(fontSize);
+          x = width / 5;
+          y = height - 200;
+
+          firstLetter = font.textToPoints("N", x, y, fontSize, {
+            sampleFactor: 0.074,
+          });
+
+          secondLetter = font.textToPoints("n", x, y, 1000, {
+            sampleFactor: 0.1,
+          });
+
+          print(firstLetter.length, secondLetter.length);
+
+          hiArray = font.textToPoints("n", width / 5, height - 250, fontSize, {
+            sampleFactor: 0.1,
+          });
+        }
+
+        function draw() {
+          background(30);
+          fill(255);
+          //stroke(255);
+          noStroke()
+
+          beginShape();
+          for (let i = 0; i < firstLetter.length; i++) {
+            vertex(firstLetter[i].x, firstLetter[i].y);
+
+            if (firstLetter[i].x <= secondLetter[i].x) {
+              firstLetter[i].x++;
+            }
+            if (firstLetter[i].x >= secondLetter[i].x) {
+              firstLetter[i].x--;
+            }
+
+            if (firstLetter[i].y <= secondLetter[i].y) {
+              firstLetter[i].y++;
+            }
+            if (firstLetter[i].y >= secondLetter[i].y) {
+              firstLetter[i].y--;
+            }
+            // vertex(secondLetter[i].x, secondLetter[i].y)
+          }
+          endShape();
+
+          //text("N", x, y)
+
+          stroke(255);
+          //strokeWeight(3)
+          for (let i = 0; i < hiArray.length; i++) {
+            push();
+            translate(hiArray[i].x, hiArray[i].y);
+            rotate(r);
+            r++;
+            // line(hiArray[i].x, hiArray[i].y, 0, 0)
+            line(-10, -100, -10, -10);
+            // line(hiArray[i].x, hiArray[i].y, 0, 1000)
+            pop();
+          }
+        }
+
+        function keyPressed() {
+          if (key == 's') {
+            save("mySketch.png");
+          }
+        }
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk9.png" alt="sk9">
+			<p> 	
+				let font
+				let pg
+
+				let tX, tY, sp, dspx, dspy, fct
+
+				function setup() {
+				  font = loadFont("BebasNeue-Regular.ttf", 600)
+				  createCanvas(1000, 1000)
+				  pg = createGraphics(1000, 1000, P2D)
+				}
+
+				function draw() {
+				  background(214, 69, 80)
+
+				  pg.background(214, 69, 80)
+				  pg.fill(159, 252, 71)
+				  pg.textFont(font)
+				  pg.textSize(300)
+				  pg.push()
+				  pg.translate(width / 2, height / 4)
+				  pg.textAlign(CENTER, CENTER)
+				  pg.text("N  N  N", 0, 10)
+				  pg.text("N  N  N", 0, 240)
+				  pg.text("N  N  N", 0, 475)
+				  pg.pop()
+
+				  let tilesX = 20
+				  let tilesY = 20
+
+				  let tileW = int(width / tilesX)
+				  let tileH = int(height / tilesY)
+
+				  for (let y = 0; y < tilesY; y++) {
+				    for (let x = 0; x < tilesX; x++) {
+				      let wave = int(sin(frameCount * 0.02 + x * y * 0.07) * 150)
+
+				      let sx = x * tileW + wave
+				      //let sy = y * tileH + wave
+				      let sy = y * tileH
+				      let sw = tileW
+				      let sh = tileH
+
+				      let dx = x * tileW + wave
+				      let dy = y * tileH
+				      //let dy = y * tileH + wave
+				      let dw = tileW
+				      let dh = tileH
+
+				      copy(pg, sx, sy, sw, sh, dx, dy, dw, dh)
+				    }
+				  }
+				}
+
+				function keyPressed() {
+				  if (key == 's') {
+				    save("mySketch.png");
+				  }
+				}
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk10.png" alt="sk10">
+			<p> 	
+				          let circles;
+          let spots;
+          let img;
+
+          function preload() {
+            img = loadImage("letter2.png", 0, 0);
+          }
+
+          function setup() {
+            createCanvas(1000, 1000);
+            img.loadPixels();
+            img.resize(1000, 1000)
+            spots = [];
+            circles = [];
+            for (let x = 0; x < img.width; x++) {
+              for (let y = 0; y < img.height; y++) {
+                let index = x + y * img.width;
+                let c = img.pixels[index * 4];
+                let b = brightness([c]);
+                if (b > 1) {
+                  spots.push(createVector(x, y));
+                }
+              }
+            }
+          }
+
+          function draw() {
+            background(40);
+
+            let total = 5;
+            let count = 0;
+            let attempts = 0;
+
+            while (count < total) {
+              let newC = newCircle();
+              if (newC !== null) {
+                circles.push(newC);
+                count++;
+              }
+              
+            }
+
+            for (let i = 0; i < circles.length; i++) {
+              let circl = circles[i];
+
+              if (circl.growing) {
+                if (circl.edges()) {
+                  circl.growing = false;
+                } else {
+                  for (let j = 0; j < circles.length; j++) {
+                    let other = circles[j];
+                    if (circl !== other) {
+                      var d = dist(circl.x, circl.y, other.x, other.y);
+                      var distance = circl.r + other.r;
+
+                      if (d - 4 < distance) {
+                        circl.growing = false;
+                        break;
+                      }
+                    }
+                  }
+                }
+              }
+
+              circl.show();
+              circl.grow();
+            }
+          }
+
+          function newCircle() {
+            var r = int(random(0, spots.length));
+            var spot = spots[r];
+            var x = spot.x;
+            var y = spot.y;
+
+            var valid = true;
+            for (var i = 0; i < circles.length; i++) {
+              var circle = circles[i];
+              var d = dist(x, y, circle.x, circle.y);
+              if (d < circle.r) {
+                valid = false;
+                break;
+              }
+            }
+            if (valid) {
+              return new Circle(x, y);
+            } else {
+              return null;
+            }
+          }
+
+          function keyPressed() {
+          if (key == 's') {
+            save("mySketch.png");
+          }
+        }
+        	</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk11.png" alt="sk11">
+			<p> 	
+				            var t;
+
+            function setup() {
+                createCanvas(1000, 1000)
+              t = 0
+            }
+
+            function draw(){
+                background(10)
+              
+              var r = 255 * noise(t+10);
+              var g = 255 * noise(t+15);
+              var b = 255 * noise(t+20);
+              
+              
+                fill(0, 10)
+                stroke(r, g, b)
+                strokeWeight(2)
+              
+              
+                
+                translate(width/2, height/2);
+                
+                for (var i=0; i < 100; i++) {
+                    push();
+                    rotate(i / mouseX);
+                    scale(i / mouseX);
+                    arc(40, -100, -50, 100, 50, 100);
+                    pop();
+                  
+                    push();
+                  
+                    rotate(i / mouseY);
+                    scale(i / mouseY);
+                    arc(40, -200, -20, 400, 20, 400);
+                    pop();
+                  
+                    push();
+                    rotate(i / mouseX);
+                    scale(i / mouseX);
+                    arc(10, -150, -40, 150, 40, 150);
+                    pop();
+                  
+                    push();
+                    rotate(i / mouseY);
+                    scale(i / mouseY);
+                    triangle(10, -50, -40, 180, 40, 150);
+                    pop();
+                }
+              
+                
+            }
+
+            function keyPressed() {
+              if (key == 's') {
+                save("mySketch.png");
+              }
+            }
+
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk12.png" alt="sk12">
+			<p> 	
+				
+
+          function setup() {
+            createCanvas(1000, 1000);
+           
+            noStroke();
+          }
+
+          function draw() {
+            background(0);
+            
+
+            var time = millis() / 1000.0;
+
+            for (var i = 0; i < 700; i++) {
+              fill(200 + 320 * sin(i / 0.01 + time),
+                
+                300 + 300 * sin(i / 0.011 + time),
+                100 + 100 * sin(i * 0.012 + time));
+                ellipse(460 + 500 * sin(i * 0.02 + time), 200 + i, 4, 5 + 400 * sin(i * 0.005 + time));
+              
+              fill(100 + 100 * sin(i / 0.01 + time),
+                127 + 127 * sin(i * 0.011 + time),
+                127 + 127 * sin(i * 0.012 + time));
+              ellipse(500 + 500 * sin(i * 0.02 + time), 50 + i, 50, 50 + 40 * sin(i * 0.005 + time));
+            }
+          }
+
+          function keyPressed() {
+            if (key == 's') {
+              save("mySketch.png");
+            }
+          }
+
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk13.png" alt="sk13">
+			<p> 	
+				        var num = 10000;
+              var noiseScale = 1000,
+                noiseStrength = 50;
+              var particles = [num];
+              let NL;
+
+              function preload() {
+                NL = loadModel("N.obj", true);
+              }
+
+              function setup() {
+                createCanvas(1000, 1000, WEBGL);
+                noStroke();
+                for (let i = 0; i < num; i++) {
+                  
+                  var loc = createVector(random(width / 4), random(height), 2);
+                  var angle = 0; 
+                  var dir = createVector(cos(angle), sin(angle));
+                  var speed = random(0.5, 2);
+                  
+                  particles[i] = new Particle(loc, dir, speed);
+                }
+              }
+
+              function windowResized() {
+                resizeCanvas(1000, 1000);
+              }
+              function draw() {
+                background(0);
+                scale(2);
+                fill(0, 10);
+                noStroke();
+                //rect(1000, 1000, 1000, 1000);
+                for (let i = 0; i < particles.length; i++) {
+                  particles[i].run();
+                }
+
+                let locX = mouseX - width / 2;
+                let locY = mouseY - height / 2;
+
+                pointLight(255, 255, 255, locX, locY, 500);
+
+                rotateX(frameCount * 0.01);
+                rotateY(frameCount * 0.01);
+
+                noStroke();
+                model(NL);
+              }
+
+              class Particle {
+                constructor(_loc, _dir, _speed) {
+                  this.loc = _loc;
+                  this.dir = _dir;
+                  this.speed = _speed;
+                  
+                }
+                run() {
+                  this.move();
+                
+                  this.update();
+                }
+                move() {
+                  let angle =
+                    noise(
+                      this.loc.x / noiseScale,
+                      this.loc.y / noiseScale,
+                      frameCount / noiseScale
+                    ) *
+                    TWO_PI *
+                    noiseStrength
+                  this.dir.x = cos(angle);
+                  this.dir.y = sin(angle);
+                  var vel = this.dir.copy();
+                  var d = 1
+                  vel.mult(this.speed * d)
+                  this.loc.add(vel)
+                }
+                checkEdges() {
+                 
+                  if (
+                    this.loc.x < 50 ||
+                    this.loc.x > width ||
+                    this.loc.y < 40 ||
+                    this.loc.y > height
+                  ) {
+                    this.loc.x = random(width * 2);
+                    this.loc.y = random(height);
+                  }
+                }
+                update() {
+                  fill(255);
+                  ellipse(this.loc.x, this.loc.y, this.loc.z);
+                }
+              }
+
+              function mousePressed() {
+                  saveCanvas("s1","png")
+              }
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk14.png" alt="sk14">
+			<p> 	
+				let angle = 0;
+
+          let N;
+
+          let graphics;
+
+          let letter;
+
+          let words = 'NNNNNNN'
+
+          // function preload() {
+          //   N = loadImage("letter2.png");
+          // }
+
+          function setup() {
+            createCanvas(1000, 1000, WEBGL);
+            graphics = createGraphics(300, 300);
+            graphics.background(0, 0, 0, 0);
+
+            letter = createGraphics(300, 200);
+            letter.fill(255)
+            letter.textAlign(CENTER)
+            letter.textSize(90)
+            letter.text(words, 200, 200)
+          }
+
+          function draw() {
+            background(255, 100);
+
+            graphics.fill(30);
+            graphics.noStroke();
+            graphics.ellipse(mouseX, mouseY, 20);
+
+            ambientLight(100);
+            directionalLight(255, 255, 255, 0, 0, 1);
+            rotateX(angle);
+            rotateY(angle * 1.3);
+            rotateZ(angle * 0.2);
+            noStroke()
+            box(400);
+
+            texture(letter);
+
+            angle += 0.02;
+          }
+
+          function keyPressed() {
+            if (key == 's') {
+              save("mySketch.png");
+            }
+          }
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk15.png" alt="sk15">
+			<p> 	
+				          let angle = 0;
+
+          let N;
+
+          let graphics;
+
+          let letter;
+
+          let words = 'N'
+
+          // function preload() {
+          //   N = loadImage("letter2.png");
+          // }
+
+          function setup() {
+            createCanvas(1000, 1000, WEBGL);
+
+            background(30)  
+            graphics = createGraphics(300, 300);
+            graphics.background(0, 0, 0, 0);
+
+            letter = createGraphics(300, 200);
+            letter.fill(219, 108, 121)
+            letter.stroke(255)
+            letter.textAlign(CENTER)
+            letter.textSize(300)
+            letter.text(words, 200, 200)
+          }
+
+          function draw() {
+            //background(255, 100);
+
+            
+            graphics.fill(30);
+            graphics.noStroke();
+            graphics.ellipse(mouseX, mouseY, 20);
+
+            // ambientLight(100);
+            // directionalLight(255, 255, 255, 0, 0, 1);
+            rotateX(angle);
+            rotateY(angle * 1.3);
+            rotateZ(angle * 0.2);
+            stroke(255)
+            box(400);
+
+            texture(letter);
+
+            angle += 0.02;
+          }
+
+          function keyPressed() {
+            if (key == 's') {
+              save("mySketch.png");
+            }
+          }
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk16.png" alt="sk16">
+			<p> 	
+				          var g;
+          var t;
+
+          function setup() {
+            createCanvas(1000, 1000);
+            background(252, 204, 156)
+            stroke(239, 122, 6);
+            
+           
+            g = 500;
+            t = 0
+          }
+
+
+          function draw() {
+            
+            beginShape();
+            
+            stroke(59, 31, 2)
+            fill(250, 159, 66, 30);
+            
+            
+            var x1 = width * noise(g + 95);
+            var x2 = width * noise(g + 105);
+            var x3 = width * noise(g + 115);
+            var x4 = width * noise(g + 125);
+            var y1 = height * noise(g + 135);
+            var y2 = height * noise(g + 145);
+            var y3 = height * noise(g + 155);
+            var y4 = height * noise(g + 165);
+
+            bezier(x1, y1, x2, y2, x3, y3, x4, y4);
+
+            g += 0.01;
+            
+            endShape(CLOSE);
+           
+            
+            translate(width/2, height/2);
+            beginShape();
+            
+            noFill()
+            strokeWeight(0.15)
+            for (var i = 0; i < 600; i++) {
+              var ang = map(i, 0, 200, 0, TAU);
+              var rad = 900 * noise(i * 0.001, t * 0.0005);
+              var x = rad * cos(ang);
+              var y = rad * sin(ang);
+              curveVertex(x / 2, y / 2);
+            }
+            endShape(CLOSE);
+
+            t += 9;
+
+            
+            if (frameCount % 1000 == 0) {
+              background(252, 204, 156);
+            }
+          }
+
+          function keyPressed() {
+            if (key == 's') {
+              save("mySketch.png");
+            }
+          }
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk17.png" alt="sk17">
+			<p> 	
+				          let img
+          var a
+          let beam
+          function preload() {
+            img = loadImage('stroke.png', width, height)
+          }
+
+
+          function setup() {
+            createCanvas(1000, 1000);
+            angleMode(DEGREES);
+            beam = new Beam(350, 300, 500, 100, 300, 100);
+            background(30)
+          }
+
+          function draw() {
+            a = p5.Vector.random2D()
+            beam.build(a)
+            beam.display()
+            
+            image(img, -300, -400)
+            img.resize(600, 900)
+            
+              if (frameCount % 80 == 0) {
+              background(30);
+            }
+          }
+
+          class Beam {
+            constructor(n, nob, initR, initG, initB, alph) {
+              this.n = n;
+              this.nob = nob; 
+              this.initR = initR; 
+              this.initG = initG; 
+              this.initB = initB;
+              this.alph = alph; 
+              this.arr = []; 
+            }
+            
+            build(cpos) {
+              var controller = random(0, this.n);
+              for (var i = 0; i < this.nob; i++) {
+                this.arr[i] = p5.Vector.mult(cpos, controller);
+                
+                this.arr[i].rotate(30 / (i - this.nob));
+              }
+             
+            }
+            display() {
+              translate(width / 2, height / 2);
+              for (var i = 0; i < this.nob; i++) {
+                strokeWeight(1);
+                stroke(this.initR, this.initG, this.initB, this.alph);
+                line(0, 0, this.arr[i].x, this.arr[i].y);
+                
+              }
+            }
+
+          }
+
+          function keyPressed() {
+            if (key == 's') {
+              save("mySketch.png");
+            }
+          }
+
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk18.png" alt="sk18">
+			<p> 	
+				          let movers = []
+          let windForce = 2
+          let gravForce = 4
+          let numberOfMovers = 500
+
+          class Mover {
+            constructor(x, y, r, angle, weight) {
+              this.position = createVector(x, y)
+              this.velocity = createVector(0, 0)
+              this.accel = createVector(0, 0)
+              this.mass = weight
+            }
+
+            applyForce(force) {
+              var f = p5.Vector.div(force, this.mass)
+              this.accel.add(f)
+            }
+          }
+
+          var makeMover = function (x, y, r, angle, weight) {
+            return {
+              position: createVector(x, y),
+              velocity: createVector(0, 0),
+              accel: createVector(0, 0),
+              mass: weight,
+
+              applyForce: function (force) {
+                var f = p5.Vector.div(force, this.mass);
+                this.accel.add(f);
+              },
+
+              update: function (v) {
+                this.velocity.add(this.accel);
+                this.position.add(this.velocity);
+
+                this.accel.mult(0)
+              },
+
+              draw: function () {
+                noStroke();
+                fill(
+                  map(this.position.y, 0, height, 255, 0),
+                  map(this.position.x, 0, width, 255, 0),
+                  80
+                )
+
+                ellipse(this.position.x, this.position.y, 100)
+              },
+
+              checkEdges: function () {
+                if (this.position.x > width) {
+                  this.position.x = width / 3
+                  this.velocity.x *= -1
+                } else if (this.position.x < 0) {
+                  this.velocity.x *= -1
+                  this.position.x = 0
+                }
+
+                if (this.position.y > height) {
+                  this.velocity.y *= -1
+                  this.position.y = height
+                }
+              },
+            };
+          };
+
+          function setup() {
+            createCanvas(1000, 1000)
+            for (var i = 0; i < numberOfMovers; i++) {
+              movers[i] = makeMover(random(width), random(height), 100, 100, 500)
+            }
+          }
+
+          function draw() {
+            background(255, 0, 0, 1)
+
+            windForce *= 0.01
+
+            var gravity = createVector(0, gravForce)
+
+            for (var i = 0; i < movers.length; i++) {
+              rotate(3)
+              movers[i].applyForce(gravity)
+              movers[i].update()
+              movers[i].draw()
+              movers[i].checkEdges()
+            }
+          }
+
+          function keyPressed() {
+            if (key == 's') {
+              save("mySketch.png");
+            }
+          }
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk19.png" alt="sk19">
+			<p> 	
+		  let font;
+          let fSize;
+          let msg;
+          let pts = [];
+
+          function preload() {
+            
+            font = loadFont("RubikMoonrocks-Regular.ttf");
+          }
+
+          function setup() {
+            createCanvas(1000, 1000);
+            background(0);
+
+            fSize = 1000;
+            textFont(font);
+            textSize(fSize);
+            msg = "N";
+            pts = font.textToPoints(msg, 0, 0, fSize, {
+              sampleFactor: 0.3,
+            });
+
+            stroke(255, 20);
+            strokeWeight(1);
+            noFill();
+          }
+
+          function draw() {
+            for (let i = 0; i < 10000; i++) {
+              let v1 = createVector(random(width), random(height));
+              let v2 = p5.Vector.random2D();
+              v2.setMag(10);
+              line(v1.x, v1.y, v1.x + v2.x, v1.y + v2.y);
+            }
+
+            const d = 20 + sin(frameCount / 50) * 50;
+            const angle = frameCount * 100;
+
+            push();
+            translate(width * 0.1, height * 0.9);
+            for (let i = 0; i < pts.length; i++) {
+              const p = pts[i];
+              push();
+              translate(p.x, p.y);
+              rotate(angle);
+              line(-d, -d, +d, +d);
+              pop();
+            }
+          }
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk20.png" alt="sk20">
+			<p> 	
+				const slices = 2, size = 500 //change to 400 for the millis
+          let randomWeights = []
+          // const points = 200;
+          // var rate;
+          // var r = 180;
+          // var inc = 0;
+
+
+          function setup() {
+            createCanvas(1000, 1000, WEBGL)
+            pixelDensity(1);
+            // rate = 2;
+            // frameRate(120);
+            background(30)
+            for(var i = 0; i < slices*2 ; i++){
+              randomWeights[i] = random(700, 1000)
+            }
+          }
+
+          function draw() {
+            translate(-500, -500)
+            fill(255)
+            //stroke(255, 90)
+            strokeWeight(0.5)
+            translate(width/2, height/2)
+            rotate(millis() / 1000);
+            scale(map(sin(millis()/1000), 0, 1, 0.85, 1))
+            //   if(inc <= points){
+            //   inc += 1;
+            //   frameRate(120);
+            // }else{
+            //   rate++;
+            //   inc = 0;
+            // }
+            
+            
+            beginShape()
+            for(var i = 0, j = 0; i < TAU; i += TAU/slices, j++){
+             box(sin(i) * size + map(cos(millis()/randomWeights[j]), 0, 1, -30, 30), 
+                          cos(i) * size + map(sin(millis()/randomWeights[j+ slices]), 0, 1, -20, 20))
+            }
+
+            box(sin(0) * size + map(cos(second()*randomWeights[0]), 0, 1, -30, 300), 
+                          sin(0) * size + map(sin(second()*randomWeights[0+ slices]), 0, 1, -20, 200))
+            box(sin(TAU*slices) * size + map(cos(second()*randomWeights[1]), 0, 1, -30, 300), 
+                          sin(TAU*slices) * size + map(sin(second()*randomWeights[1+ slices]), 0, 1, -20, 200))
+            curveVertex(sin(2/TAU*slices) * size + map(cos(second()*randomWeights[20]), 0, 1, -30, 300), 
+                          cos(2/TAU*slices) * size + map(sin(second()*randomWeights[2+ slices]), 0, 1, -20, 200))
+            
+          //   curveVertex(sin(0) * size + map(cos(millis()*randomWeights[0]), 0, 1, -30, 300), 
+          //                 cos(0) * size + map(sin(millis()*randomWeights[0+ slices]), 0, 1, -20, 200))
+          //   curveVertex(sin(TAU*slices) * size + map(cos(millis()*randomWeights[1]), 0, 1, -30, 300), 
+          //                 cos(TAU*slices) * size + map(sin(millis()*randomWeights[1+ slices]), 0, 1, -20, 200))
+          //   curveVertex(sin(2/TAU*slices) * size + map(cos(millis()*randomWeights[20]), 0, 1, -30, 300), 
+          //                 cos(2/TAU*slices) * size + map(sin(millis()*randomWeights[2+ slices]), 0, 1, -20, 200))
+            endShape(CLOSE)
+            
+             
+          //   noFill()
+          //   ellipse(0, 0 , r * 4, r * 2)
+          //   for(var i = 0; i < inc; i++){
+          //     var x = cos(i * TWO_PI/points) * r
+          //     var y = sin(i * TWO_PI/points) * r
+
+          //     var xa = cos(i*rate * TWO_PI/points) * r
+          //     var ya = sin(i*rate * TWO_PI/points) * r
+          //     strokeWeight(0.5)
+          //     stroke(255)
+          //     line(x, y, xa, ya)
+          //   }
+            
+          }
+
+          function keyPressed() {
+            if (key == 's') {
+              save("mySketch.png");
+            }
+          }
+			</p>
+		</div>
+
+		<div class=container>
+			<img src="images/sk21.png" alt="sk21">
+			<p> 	
+				function setup() {
+            createCanvas(1000, 1000, WEBGL)
+            angleMode(DEGREES)
+            background(30)
+          }
+
+          function draw() {
+            //background(30)
+            
+            stroke(30)
+            let dirX = (mouseX / width - 0.5) * 2;
+            let dirY = (mouseY / height - 0.5) * 2;
+            directionalLight(255, 255, 255, -dirX, -dirY, -1);
+            
+
+            translate(-150, 0, 0);
+            push();
+            rotateZ(frameCount * 0.6);
+            rotateX(frameCount * 0.6);
+            rotateY(frameCount * 0.6);
+            box(70, 400, 70);
+            pop();
+            
+            
+            translate(150, 0, 0)
+            push();
+            rotate(-40)
+            rotateZ(frameCount * 0.6);
+            rotateX(frameCount * 0.6);
+            rotateY(frameCount * 0.6);
+            box(70, 450, 70);
+            pop();
+            
+            translate(150, 0, 0);
+            push();
+            rotateZ(frameCount * 0.6);
+            rotateX(frameCount * 0.6);
+            rotateY(frameCount * 0.6);
+            box(70, 400, 70);
+            pop();
+
+          }
+
+          function keyPressed() {
+            if (key == 's') {
+              save("mySketch.png");
+            }
+          }
+			</p>
+		</div>
+
+</body>
+</html>
