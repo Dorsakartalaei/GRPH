@@ -3,7 +3,7 @@
 body {
   font-size: 1.3rem;
   line-height: 1.65;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #1E1E24;
   background-color: #1e1e1e;
  /* background-image: url("images/design-07.png");
@@ -43,7 +43,7 @@ body {
 }
 
 .head{
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 70px;
 }
@@ -61,7 +61,7 @@ p { margin-top: 0; }
 .columns {
 
   color: #FFFFFF;
-  font-weight: light;
+  font-weight: thin;
   margin-left: 30%;
   columns: 250px 2;
   column-gap: 3em;
@@ -70,9 +70,9 @@ p { margin-top: 0; }
 .columns2 {
   color: #FFFFFF;
   font-weight: light;
-  margin-left: 0%;
+  margin-left: -5%;
   margin-top: 10%;
-  margin-right: 50%;
+  margin-right: 60%;
   columns: 250px 1;
   column-gap: 3em;
 }
@@ -99,6 +99,16 @@ p { margin-top: 0; }
 .columnImage {
   width: 800px;
   float:right;
+}
+
+.columns5 {
+
+  color: #FFFFFF;
+  font-weight: light;
+  margin-left: 0;
+ 
+  columns: 100px 2;
+  column-gap: 3em;
 }
 
 
@@ -156,4 +166,35 @@ p { margin-top: 0; }
 .canvas {
    max-width: 99%;
   max-height: 99%;
+}
+
+.image1{
+  width: 300px;
+  
+
+}
+
+.image2{
+  width: 700px;
+  margin: 2%;
+  margin-left: 2%;
+  
+}
+
+.example {
+  width: 400px;
+  display: block;
+  float: left;
+}
+
+.example2 {
+  width: 1000px;
+  display: block;
+  float: right;
+}
+
+.example3 {
+  width: 400px;
+  display: block;
+  float: left;
 }

@@ -1,18 +1,43 @@
 *{
 	margin:  5;
-	background:  #DBD56E;
-	background-image: url('images/back.png');
+	background:  #1E1E24;
 	/*background-repeat: space; */
-	background-size: 100px;
-	font-family: 'Abril Fatface' normal;
+	background-image: url(images/flower-01.png);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
 
 
 }
 
+.container{
+	width: 90%;
+	margin:  0 auto;
+
+}
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #e2a3c7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
 h1 {
-	color: #FEF4D8;
-	
+	color: #FFFFFF;
 	font-size:  200px;
 	font-weight: bold;
 	margin-top: 5%;
@@ -28,30 +53,13 @@ audio {
 }
 
 .title1 {
-	color:  #403D58;
+	color:  #69648d;
 	font-family: Arial;
 	margin-left: 20%;
+	font-size: 40px;
 	
 }
 
-.title2 {
-	color:  #403D58;
-	font-family: Arial;
-	margin-left: 20%;
-
-}
-.title3 {
-	color:  #403D58;
-	font-family: Arial;
-	margin-left: 20%;
-
-}
-.title4 {
-	color:  #403D58;
-	font-family: Arial;
-	margin-left: 20%;
-
-}
 
 .h2 {
 	
