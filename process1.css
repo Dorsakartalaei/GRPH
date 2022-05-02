@@ -1,0 +1,356 @@
+body{
+	margin:  5%;
+	border: 10%;
+	background:  #000000;
+	font-family: 'Cinzel Decorative' normal;
+	font-weight: light;
+
+
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+h1 {
+	color: #FFFFFF;
+	font-size: 72px;
+	font-weight: light;
+	text-align: center;
+}
+
+h3 {
+	color:  #FFFFFF;
+	font-size:  50px;
+	font-weight: regular;
+	margin-top: 5%;
+	text-align: center;
+}
+
+.img-map1 {
+	width: 350px;
+}
+
+.img-map2 {
+	width: 350px;
+	margin-left: 1%;
+}
+
+.img-map3 {
+	width: 350px;
+	margin-left: 1%;
+}
+
+.img-map4 {
+	width: 350px;
+	margin-left: 1%;
+}
+
+.p1 {
+	color:  #FFFFFF;
+	text-align: left;
+	text-size: 14px;
+	margin-right: 50%;
+}
+
+.img-soft1 {
+	width: 450px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.img-soft2 {
+	width: 450px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.img-soft3 {
+	width: 450px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.sc4 {
+	width: 1500px;
+	 display: block;
+ 	 margin-left: auto;
+ 	 margin-right: auto;
+  	 
+}
+
+.p2 {
+	color:  #FFFFFF;
+	text-align: left;
+	text-size: 14px;
+	margin-top: 5%;
+	/* margin-right: 50%; */
+}
+
+.astro {
+	width: 450px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.astro2 {
+	width: 450px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.astro3 {
+	width: 450px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.h {
+	width: 450px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.h2 {
+	width: 450px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.h3 {
+	width: 450px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.p3 {
+	color:  #FFFFFF;
+	text-align: left;
+	text-size: 14px;
+	margin-top: 5%;
+	/* margin-right: 60%; */
+}
+
+.pat {
+	width: 250px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.pat2 {
+	width: 250px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.pat3 {
+	width: 250px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.pat4 {
+	width: 250px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.pat5 {
+	width: 250px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+
+.p4 {
+	color:  #FFFFFF;
+	text-align: left;
+	text-size: 14px;
+	margin-top: 5%;
+	/* margin-right: 60%; */
+}
+
+.eye1 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+.eye2 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+.eye3 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+.eye4 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+.p5 {
+	color:  #FFFFFF;
+	text-align: left;
+	text-size: 14px;
+	margin-top: 5%;
+	/* margin-right: 60%; */
+}
+
+.sat1 {
+	width: 1350px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+.sat2 {
+	width: 1350px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+.ex1 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+
+.ex2 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+
+.ex3 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+
+.ex4 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+.br {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+.br2 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+.br3 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+.br4 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+.br5 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+.br6 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+.br7 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+.br8 {
+	width: 300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+
+.p6 {
+	color:  #FFFFFF;
+	/* text-align: left; */
+	text-size: 14px;
+	margin-top: 5%;
+	margin-left: 3%;
+	margin-right: 70%; 
+}
+
+.p7 {
+	color:  #FFFFFF;
+	text-align: left;
+	text-size: 14px;
+	margin-top: 5%;
+	/* margin-right: 60%; */
+}
+
+.ten5 {
+	display: block;
+	width: 60%;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 5%;
+}
+
+.x1 {
+	width:300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+.x2 {
+	width:300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+.p8 {
+	color:  #FFFFFF;
+	text-align: center;
+	text-size: 14px;
+	margin-top: 5%;
+	/* margin-right: 60%; */
+}
+.tr {
+	width:400px;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.w1 {
+	width:300px;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+

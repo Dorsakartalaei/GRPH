@@ -1,0 +1,159 @@
+
+
+body {
+  font-size: 1.3rem;
+  line-height: 1.65;
+  font-family: 'Arial', sans-serif;
+  color: #1E1E24;
+  background-color: #1e1e1e;
+ /* background-image: url("images/design-07.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+  background-size: 50%, 50%; */
+  margin: 2em;
+}
+
+.container{
+  width: 90%;
+  margin:  0 auto;
+
+}
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #ff6663;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.back{
+  display: block;
+  width: 200px;
+}
+
+.head{
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #FFFFFF;
+  font-weight: 900;
+}
+
+p { margin-top: 0; }
+
+
+
+.columns {
+
+  color: #FFFFFF;
+  font-weight: light;
+  margin-left: 30%;
+  columns: 250px 2;
+  column-gap: 3em;
+}
+
+.columns2 {
+  color: #FFFFFF;
+  font-weight: light;
+  margin-left: 0%;
+  margin-top: 10%;
+  margin-right: 50%;
+  columns: 250px 1;
+  column-gap: 3em;
+}
+
+.columns3 {
+
+  color: #FFFFFF;
+  font-weight: light;
+  margin-left: 0;
+  margin-top: 10%;
+  columns: 250px 2;
+  column-gap: 3em;
+}
+
+.columns4 {
+
+  color: #FFFFFF;
+  font-weight: light;
+  margin-left: 0;
+  margin-top: 10%;
+  columns: 250px 1;
+  column-gap: 3em;
+}
+.columnImage {
+  width: 800px;
+  float:right;
+}
+
+
+.intro {
+  color: #FFFFFF;
+  column-span: all;
+  font-size: 50px;
+  font-weight: bold;
+}
+.title {
+   color: #FFFFFF;
+  column-count: 3;
+  column-rule-width: 1px;
+
+}
+
+.p1{
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: -12%;
+  color: #FFFFFF;
+}
+
+.p2{
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.head1 {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.columnImage2 {
+  width: 800px;
+  margin-top: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Sub {
+  margin-top: 10%;
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.para {
+  color: #FFFFFF;
+  font-weight: light;
+}
+
+.canvas {
+   max-width: 99%;
+  max-height: 99%;
+}

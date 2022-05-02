@@ -1,0 +1,69 @@
+body{
+	margin:  0;
+	background:  #fce4d8;
+	font-family: 'Abril Fatface';
+	font-weight: normal;
+
+
+}
+
+.container{
+	width: 90%;
+	margin:  0 auto;
+
+}
+
+header{
+	background: ;
+
+}
+
+
+nav{
+
+	float: centre;
+
+}
+
+nav ul{
+font-size: 50px;
+list-style: none;
+text-align: center;
+
+
+
+}
+
+nav ul li a{
+
+	color: #BA6987;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+}
+
+nav ul li a:hover{
+color: #7289DA;
+}
+
+
+
+h1{
+	color: #B30E4B;
+	text-align: center;
+	font-size: 200px;
+	text-decoration: underline;
+	font-weight: regular;
+	
+	
+
+}
+
+
+li {
+	margin: 5%;
+}
+
+
+
+
