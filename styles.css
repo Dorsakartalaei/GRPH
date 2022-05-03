@@ -1,8 +1,12 @@
 body{
 	margin:  0;
-	background:  #fce4d8;
-	font-family: 'Abril Fatface';
-	font-weight: normal;
+	background:  #333333;
+/*	background-image: url("images/flower-01.png");
+	background-size: 100%, 100%;
+	background-repeat: no-repeat;
+	background-position: top right; */
+	font-family: 'Roboto', sans-serif;
+	
 
 
 }
@@ -49,14 +53,19 @@ color: #7289DA;
 
 
 h1{
-	color: #B30E4B;
+	color: #FFE000;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	font-size: 200px;
-	text-decoration: underline;
-	font-weight: regular;
-	
-	
+}
 
+h2 {
+	color: #FFE000;
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	font-size: 20px;
+	margin-left: 7%;
+	margin-top: 10%;
 }
 
 
@@ -65,5 +74,30 @@ li {
 }
 
 
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 400px;
+  margin-left: 7%;
+  margin-bottom: 10%;
+}
+
+div.gallery:hover {
+ font-size: 70px;
+ 
+}
+
+div.gallery img {
+  width: 400px;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  color: #FFE000;
+  text-align: center;
+  font-size: 30px;
+  white-space: pre;
+}
 
 
