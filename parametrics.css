@@ -1,6 +1,8 @@
 body{
 	margin:  5;
-	background:  #bfd7ea;
+	background:  black;
+	background-image: url('images/sk11.png');
+	background-position: left left;
 	font-family: 'Arial', sans-serif;
 	font-weight: bold;
 
@@ -33,17 +35,19 @@ h2{
 	text-align:  center;
 	color: #ff8200;
 	font-size: 75px;
+
 	
 
 }
 
 nav{
-
-	float: left;
+	margin-top: 20%;
+	float: center;
 
 }
 
 nav ul{
+text-align: center;
 font-size: xxx-large;
 list-style: none;
 
@@ -53,16 +57,19 @@ list-style: none;
 
 nav ul li a{
 
-	color: #0b3954;
+	color: #05FF00;
 	text-decoration: none;
+	text-align: center;
 	text-transform: uppercase;
 	
 }
 
 nav ul li a:hover{
 color: #e0ff4f;
+font-size: 100px;
+transition: font-size 1s ease-out;
 }
 
 li {
-	margin: 10%;
+	margin: 5%;
 }

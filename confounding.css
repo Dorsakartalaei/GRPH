@@ -1,6 +1,7 @@
 body{
 	margin:  5;
-	background:  #B85E77;
+	background: black;
+	background-image: url('images/sc3.jpg');
 	font-family: 'Arial', sans-serif;
 	font-weight: bold;
 
@@ -37,14 +38,17 @@ header{
 
 
 nav{
+   margin-top: 20%;
+	float: center;
 
-	float: left;
 
 }
 
 nav ul{
 font-size: xxx-large;
+text-align: center;
 list-style: none;
+
 
 
 
@@ -54,27 +58,36 @@ nav ul li a{
 
 	color: #841A37;
 	text-decoration: none;
+	text-align: center;
+	font-size: 50px;
 	text-transform: uppercase;
 	
 }
 
 nav ul li a:hover{
 color: #FAD402;
+font-size: 100px;
+transition: font-size 1s ease-out;
 }
 
 
 
 h2{
 	text-align:  center;
+	color: #EE115A;
 	font-size: 75px;
+	text-transform: uppercase;
+	white-space: pre;
+
 	
 
 }
 
-
 li {
-	margin: 10%;
+	margin: 5%;
 }
+
+
 
 
 
