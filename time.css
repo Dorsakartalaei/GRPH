@@ -6,13 +6,17 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #1E1E24;
   background-color: #1e1e1e;
- /* background-image: url("images/design-07.png");
+/*background-image: url("images/sonic-02.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right top;
-  background-size: 50%, 50%; */
+  background-position: absolute;
+  background-size: 100%, 100%; 
+  background-blend-mode: screen;
+  */
   margin: 2em;
 }
+
+
 
 .container{
   width: 90%;
